@@ -51,19 +51,13 @@ function main (fileNames: string[]): void {
     });
 }
 
-main([
-    './images/cmu.jpg', 
-    './images/logo-types-collection.jpg', 
-    './images/not-a-file.jpg'
-]);
-
 // Implement the async version of the above here
 // Your version should not use .then and should use try/catch instead of .catch
 async function mainAsync(fileNames: string[]): Promise<void> {
     // Your code here
 }
 
-mainAsync([
+main([
     './images/cmu.jpg', 
     './images/logo-types-collection.jpg', 
     './images/not-a-file.jpg'

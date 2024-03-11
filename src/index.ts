@@ -28,23 +28,6 @@ function detectFace(fileName: string) {
  * @param fileNames - An array of file names to run logo detection on.
  * @returns void
  */
-function main (fileNames: string[]): void { fileNames.forEach(detectFace); }
-        
-/* main([
-    './images/cmu.jpg', 
-    './images/logo-types-collection.jpg', 
-    './images/not-a-file.jpg'
-]); */
-
-import { ImageAnnotatorClient } from '@google-cloud/vision';
-
-const client = new ImageAnnotatorClient();
-
-/**
- * Runs logo detection on the given list of file names and logs the description and average score of each logo.
- * @param fileNames - An array of file names to run logo detection on.
- * @returns void
- */
 function main (fileNames: string[]): void {
     fileNames.forEach((fileName: string) => {
         console.log(`Running logo detection on ${fileName}`);
